@@ -66,13 +66,13 @@ body {
 }
 
 article {
-    width: 60%;
+    width: 70%;
     color: aqua;
     border-right: 1px dotted rgb(59, 56, 56);
 }
 
 aside {
-    width: 40%;
+    width: 30%;
     color: aqua;
     font-family: reddit , sans-serif;
 }
@@ -119,6 +119,7 @@ aside {
     font-size: 1.1em;
     box-shadow: 2px 2px 5px black;
     padding: 5px;
+    margin-top: 10px;
 }
 
 .sign {
@@ -129,6 +130,10 @@ aside {
 .sign label {
     width: 150px;
     margin-right: 15px;
+}
+
+.sign input {
+    width: 150px;
 }
 
 aside #success {
@@ -291,6 +296,53 @@ aside #success {
 .surveymain {
     display: flex;
     justify-content: center;
+}
+
+.content .blog {
+    width: 100%;
+    height: 600px;
+    overflow: scroll;
+}
+
+.blog .blogcontent {
+    font-family: playfair , sans-serif;
+    font-size: 1.4em;
+    height: 120px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.more {
+    padding: 10px;
+    background-color: rgb(73, 68, 68);
+    color: aquamarine;
+    box-shadow: 2px 2px 5px black;
+}
+
+.hidden {
+    font-size: 0.8em;
+    color: aquamarine;
+}
+
+.hidden img {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden iframe {
+    width: 600px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blogcontent:focus-within{
+    overflow: visible;
+    height: auto;
 }
 
 
