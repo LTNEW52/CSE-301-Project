@@ -1,0 +1,296 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(59, 56, 56);
+}
+
+#navbar {
+    background-color: rgb(56, 52, 52);
+    text-align: center;
+}
+
+#navbar a {
+    color: aqua;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    font-family: reddit , sans-serif;
+}
+
+#navbar a:hover {
+    background-color: rgb(82, 76, 76);
+}
+
+#banner {
+    width: 100%;
+    background-color: rgb(81, 73, 88);
+    overflow: hidden;
+}
+
+#banner img {
+    width: 250px;
+    float: left;
+}
+
+#banner img:hover {
+    animation-name: move;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+#banner .bannerText {
+    color: aquamarine;
+    text-align: center;
+    font-style: italic;
+    padding-top: 25px;
+    text-shadow: 2px 2px 5px aquamarine;
+    animation-name: glow;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    font-family: playfair , sans-serif;
+}
+
+@keyframes move {
+    50% {transform: translateX(1100px);}
+}
+
+@keyframes glow {
+    50% {opacity: 30%;}
+}
+
+.content {
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+article {
+    width: 60%;
+    color: aqua;
+    border-right: 1px dotted rgb(59, 56, 56);
+}
+
+aside {
+    width: 40%;
+    color: aqua;
+    font-family: reddit , sans-serif;
+}
+
+@font-face {
+    src: url(Fonts/RedditMono-VariableFont_wght.ttf);
+    font-family: reddit;
+}
+
+@font-face {
+    src: url(Fonts/PlayfairDisplay-VariableFont_wght.ttf);
+    font-family: playfair;
+}
+
+#end {
+    background-color: rgb(95, 90, 90);
+    color: aquamarine;
+    display: block;
+    clear: both;
+    padding: 15px;
+    font-family: playfair , sans-serif;
+    text-align: center;
+}
+
+#end a {
+    color: aqua;
+    text-decoration: none;
+}
+
+#end p {
+    display: inline;
+    margin-right: 15px;
+}
+
+#end a:hover {
+    font-size: 1.3em;
+}
+
+#signup {
+    display: block;
+    border-radius: 15px;
+    color: aqua;
+    background-color: rgb(48, 45, 45);
+    font-size: 1.1em;
+    box-shadow: 2px 2px 5px black;
+    padding: 5px;
+}
+
+.sign {
+    display: inline-block;
+    justify-content: left;
+}
+
+.sign label {
+    width: 150px;
+    margin-right: 15px;
+}
+
+aside #success {
+    visibility: hidden;
+    text-align: center;
+}
+
+#signup:focus ~ #success {
+    visibility: visible;
+}
+
+.gallary {
+    width: 200px;
+    border: 2px solid rgb(59, 56, 56);
+    display: inline-block;
+    margin: 30px;
+}
+
+.gallary:hover {
+    border-color: aqua;
+    font-size: 1.1em;
+}
+
+.gallary .description {
+    text-align: center;
+    color: aquamarine;
+    font-weight: bold;
+    font-family: playfair , sans-serif;
+    background-color: rgb(39, 43, 43);
+    padding: 15px;
+}
+
+.gallary img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+#mediamain {
+    box-sizing: border-box;
+}
+
+.left {
+    width: 97.5%;
+    height: 400px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+
+.left .frame {
+    width: 50%;
+    height: 100%;
+    border: 2px solid rgb(59, 56, 56);
+    float: left;
+    margin-right: 15px;
+}
+
+.left .frame:hover {
+    border-color: aquamarine;
+}
+
+.left iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.left p {
+    color: aqua;
+    font-family: playfair , sans-serif;
+    font-style: italic;
+    padding: 15px;
+    display: block;
+}
+
+.right {
+    width: 97.5%;
+    height: 400px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.right .frame {
+    width: 50%;
+    height: 100%;
+    border: 2px solid rgb(59, 56, 56);
+    float: right;
+    margin-left: 15px;
+}
+
+.right .frame:hover {
+    border-color: aquamarine;
+}
+
+.right iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.right p {
+    color: aqua;
+    font-family: playfair , sans-serif;
+    font-style: italic;
+    padding: 15px;
+}
+
+.survey {
+    width: 520px;
+    height: 520px;
+    border: 2px solid black;
+    background-color: rgb(122, 68, 173);
+    margin: 25px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.formsize {
+    color: aqua;
+    font-family: playfair , sans-serif;
+    display: flex;
+    margin: 0px 0px 15px 15px;
+}
+
+.formsize label {
+    width : 150px;
+}
+
+.formsize .checkbox {
+    align-content: center;
+    width: 60px;
+}
+
+.checkbox + input {
+    margin-right: 15px;
+}
+
+.formsize .radiobutton {
+    width: 50px;
+}
+
+.radiobutton + input {
+    margin-right: 15px;
+}
+
+.sub {
+    display: inline-block;
+    margin: 0px 40px 0px 70px;
+}
+
+.sub .submission {
+    border-radius: 10px;
+    padding: 3px;
+    color: aqua;
+    background-color: rgb(70, 64, 64);
+    width: 100px;
+    text-align: center;
+}
+
+.surveymain {
+    display: flex;
+    justify-content: center;
+}
+
+

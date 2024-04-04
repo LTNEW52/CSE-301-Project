@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Time!</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="Image/jpg" href="Image/Favicon.jpg">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+                <a href="Home.html">Home</a>
+                <a href="Capture.html">Capture By Me</a>
+                <a href="Media.html">Media Hub</a>
+                <a href="Information.html">Did You Know?</a>
+                <a href="Survey.html">Survey Time!</a>
+        </nav>
+
+        <main class="surveymain">
+            <div class="survey">
+                <form>
+                    <div class="formsize">
+                        <label for="username">UserName:</label>
+                        <input id="username" type="text" placeholder="Enter your username here!" required minlength="6" maxlength="25">
+                    </div>
+                    <div class="formsize">
+                        <label for="password">Password:</label>
+                        <input id="password" type="password" required minlength="8" maxlength="32">
+                    </div>
+                    <div class="formsize">
+                        <label for="mail">Email:</label>
+                        <input id="mail" type="email" placeholder="abc@example.com" required>
+                    </div>
+                    <div class="formsize">
+                        <label for="phone">Phone Number:</label>
+                        <input id="phone" type="tel">
+                    </div>
+                    <div class="formsize">
+                        <label for="date">Day/Month/Year:</label>
+                        <input id="date" type="date">
+                    </div>
+                    <div class="formsize">
+                        <label for="quantity">Total Amount:</label>
+                        <input id="quantity" type="number" min="0" max="100">
+                    </div>
+                    <div class="formsize">
+                        <label for="gender">Gender:</label>
+                        <label for="male" class="radiobutton">Male</label>
+                        <input id="male" type="radio" name="gender" value="male">
+                        <label for="female" class="radiobutton">Female</label>
+                        <input id="female" type="radio" name="gender" value="female">
+                    </div>
+                    <div class="formsize">
+                        <label for="device">Which device you frequently use?</label>
+                        <select id="device">
+                            <option value="PC">PC</option>
+                            <option value="Android">Android</option>
+                            <option value="PlayStation">PlayStation</option>
+                            <option value="Switch">Switch</option>
+                        </select>
+                    </div>
+                    <div class="formsize">
+                        <label for="check">Which of the following do you own?</label>
+                        <label for="desktop" class="checkbox">Desktop</label>
+                        <input id="desktop" type="checkbox" value="desktop">
+                        <label for="laptop" class="checkbox">Laptop</label>
+                        <input id="laptop" type="checkbox" value="laptop">
+                        <label for="android" class="checkbox" >Android</label>
+                        <input id="android" type="checkbox" value="android">
+                    </div>
+                    <div class="formsize">
+                        <label for="comment">If you have any suggestions:</label>
+                        <textarea id="comment" rows="3" cols="35"></textarea>
+                    </div>
+                    <div class="formsize">
+                        <label for="filesub">Image Submission:</label>
+                        <input id="filesub" type="file" accept="Image/png, Image/jpeg, Video/mp4">
+                    </div>
+                    <div class="sub">
+                        <input type="submit" class="submission" id="submit">
+                    </div>
+                    <div class="sub">
+                        <input type="reset" class="submission">
+                    </div>
+                </form>
+            </div>
+        </main>
+    </header>
+</body>
+</html>
