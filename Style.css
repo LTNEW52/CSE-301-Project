@@ -2,10 +2,11 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: rgb(59, 56, 56);
+    line-height: 25px;
 }
 
 #navbar {
-    background-color: rgb(56, 52, 52);
+    background-color: rgb(51, 48, 48);
     text-align: center;
 }
 
@@ -34,6 +35,7 @@ body {
 
 #banner img:hover {
     animation-name: move;
+    animation-play-state: running;
     animation-iteration-count: 1;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -183,7 +185,6 @@ aside #success {
     margin-bottom: 20px;
 }
 
-
 .left .frame {
     width: 50%;
     height: 100%;
@@ -242,7 +243,7 @@ aside #success {
 
 .survey {
     width: 520px;
-    height: 520px;
+    height: auto;
     border: 2px solid black;
     background-color: rgb(122, 68, 173);
     margin: 25px;
@@ -264,7 +265,7 @@ aside #success {
 
 .formsize .checkbox {
     align-content: center;
-    width: 60px;
+    width: auto;
 }
 
 .checkbox + input {
@@ -272,7 +273,7 @@ aside #success {
 }
 
 .formsize .radiobutton {
-    width: 50px;
+    width: auto;
 }
 
 .radiobutton + input {
@@ -288,9 +289,10 @@ aside #success {
     border-radius: 10px;
     padding: 3px;
     color: aqua;
-    background-color: rgb(70, 64, 64);
+    background-color: rgb(29, 27, 27);
     width: 100px;
     text-align: center;
+    box-shadow: 2px 2px 5px black;
 }
 
 .surveymain {
@@ -299,8 +301,8 @@ aside #success {
 }
 
 .content .blog {
-    width: 100%;
-    height: 600px;
+    width: auto;
+    height: 400px;
     overflow: scroll;
 }
 
@@ -332,17 +334,359 @@ aside #success {
     margin-right: auto;
 }
 
-.hidden iframe {
-    width: 600px;
-    height: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.blogcontent:focus-within{
+.blogcontent:focus-within {
     overflow: visible;
     height: auto;
+}
+
+#maininfo #title {
+    color: aqua;
+    text-align: center;
+}
+
+.star {
+    padding: 15px;
+}
+
+.star h1{
+    color: aqua;
+}
+
+
+.star p{
+    color: aquamarine;
+    font-family: playfair , sans-serif;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.anim {
+    opacity: 10%;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#sun {
+    width: 350px;
+    height: 350px;
+    border: 2px solid white;
+    border-radius: 300px;
+    background-color: white;
+    opacity: 10%;
+    animation-name: glowsun;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes glowsun {
+    50% {box-shadow: 2px 2px 5px yellow;
+    border-color: yellow;background-color: yellow; opacity: 100%;} 
+
+    0%{transform: translateX(0vw) translateY(0px);}
+    16%{transform: translateX(11vw) translateY(-25px);}
+    32%{transform: translateX(22vw) translateY(0px);}
+    48%{transform: translateX(33vw) translateY(-25px);}
+    64%{transform: translateX(44vw) translateY(0px);}
+    80%{transform: translateX(55vw) translateY(-25px);}
+    100%{transform: translateX(70vw) translateY(0px);}
+}
+
+#redgiant {
+    width: 500px;
+    height: 500px;
+    border: 2px solid white;
+    border-radius: 500px;
+    background-color: white;
+    opacity: 10%;
+    animation-name: glowredgiant;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes glowredgiant {
+    50% {box-shadow: 2px 2px 5px red;border-color:rgb(243, 68, 68); background-color:rgb(243, 68, 68); opacity: 100%;}
+
+    0%{transform: translateX(0vw) translateY(0px);}
+    16%{transform: translateX(11vw) translateY(-25px);}
+    32%{transform: translateX(22vw) translateY(0px);}
+    48%{transform: translateX(33vw) translateY(-25px);}
+    64%{transform: translateX(44vw) translateY(0px);}
+    80%{transform: translateX(55vw) translateY(-25px);}
+    100%{transform: translateX(70vw) translateY(0px);}
+}
+
+#whitedwarf {
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(136, 80, 80);
+    border-radius: 200px;
+    background-color: rgb(139, 99, 99);
+    opacity: 10%;
+    animation-name: whitedwarf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes whitedwarf {
+    50% {box-shadow: 2px 2px 5px white;border-color: white;background-color: white; opacity: 100%;}
+
+    0%{transform: translateX(0vw) translateY(0px);}
+    16%{transform: translateX(11vw) translateY(-25px);}
+    32%{transform: translateX(22vw) translateY(0px);}
+    48%{transform: translateX(33vw) translateY(-25px);}
+    64%{transform: translateX(44vw) translateY(0px);}
+    80%{transform: translateX(55vw) translateY(-25px);}
+    100%{transform: translateX(70vw) translateY(0px);}
+}
+
+#neutronstar {
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 200px;
+    background-color: rgb(255, 255, 255);
+    opacity: 10%;
+    animation-name: neutronstar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes neutronstar {
+    50% {box-shadow: 2px 2px 5px rgb(0, 132, 255);border-color: rgb(0, 132, 255);background-color: rgb(0, 132, 255); opacity: 100%;}
+
+    0%{transform: translateX(0vw) translateY(0px);}
+    16%{transform: translateX(11vw) translateY(-25px);}
+    32%{transform: translateX(22vw) translateY(0px);}
+    48%{transform: translateX(33vw) translateY(-25px);}
+    64%{transform: translateX(44vw) translateY(0px);}
+    80%{transform: translateX(55vw) translateY(-25px);}
+    100%{transform: translateX(70vw) translateY(0px);}
+}
+
+#reddwarf {
+    width: 280px;
+    height: 280px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 200px;
+    background-color: rgb(255, 255, 255);
+    opacity: 10%;
+    animation-name: reddwarf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes reddwarf {
+    50% {box-shadow: 2px 2px 5px orange;border-color: orange;background-color: orange; opacity: 100%;}
+
+    0%{transform: translateX(0vw) translateY(0px);}
+    16%{transform: translateX(11vw) translateY(-25px);}
+    32%{transform: translateX(22vw) translateY(0px);}
+    48%{transform: translateX(33vw) translateY(-25px);}
+    64%{transform: translateX(44vw) translateY(0px);}
+    80%{transform: translateX(55vw) translateY(-25px);}
+    100%{transform: translateX(70vw) translateY(0px);}
+}
+
+#browndwarf {
+    width: 230px;
+    height: 230px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 200px;
+    background-color: rgb(255, 255, 255);
+    opacity: 10%;
+    animation-name: browndwarf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes browndwarf {
+    50% {box-shadow: 2px 2px 5px rgb(168, 101, 168);border-color: rgb(168, 101, 168);background-color: rgb(168, 101, 168); opacity: 100%;}
+
+    0%{transform: translateX(0vw) translateY(0px);}
+    16%{transform: translateX(11vw) translateY(-25px);}
+    32%{transform: translateX(22vw) translateY(0px);}
+    48%{transform: translateX(33vw) translateY(-25px);}
+    64%{transform: translateX(44vw) translateY(0px);}
+    80%{transform: translateX(55vw) translateY(-25px);}
+    100%{transform: translateX(70vw) translateY(0px);}
+}
+
+@media screen and (max-width: 640px) {
+    #navbar a{
+        display: inline-block;
+    }
+
+    #banner {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    #banner img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #banner img:hover {
+        animation-play-state: paused;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    #end p {
+        display: inline-block;
+    }
+
+    .gallary {
+        width: fit-content;
+    }
+
+    .left .frame {
+        float: none;
+        width: 95%;
+        height: 400px;
+        margin-left: 15px;
+    }
+
+    .right .frame {
+        float: none;
+        width: 95%;
+        height: 400px;
+    }
+
+    .left p {
+        float: none;
+        margin-left: 15px;
+    }
+
+    .right p {
+        float: none;
+        margin-left: 15px;
+    }
+
+    .left {
+        height: auto;
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+    .right {
+        height: auto;
+        padding: 10px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .survey {
+        width: 80%;
+        height: auto;
+        display: block;
+    }
+
+    .formsize {
+        display: block;
+    }
+
+    .formsize label {
+        display: block;
+        padding: 0px;
+        text-align: justify;
+        justify-content: center;
+    }
+
+    .survey input {
+        width: 150px;
+        display: block;
+    }
+
+    .formsize textarea {
+        width: 150px;
+        height: 150px;
+    }
+
+    @keyframes glowsun {
+        50% {box-shadow: 2px 2px 5px yellow;
+        border-color: yellow;background-color: yellow; opacity: 100%;} 
+    
+        0%{transform: translateX(0px) translateY(0px);}
+        16%{transform: translateX(15px) translateY(-25px);}
+        32%{transform: translateX(25px) translateY(0px);}
+        48%{transform: translateX(35px) translateY(-25px);}
+        64%{transform: translateX(45px) translateY(0px);}
+        80%{transform: translateX(55px) translateY(-25px);}
+        100%{transform: translateX(65px) translateY(0px);}
+    }
+
+    @keyframes glowredgiant {
+        50% {box-shadow: 2px 2px 5px red;border-color:rgb(243, 68, 68); background-color:rgb(243, 68, 68); opacity: 100%;}
+    
+        0%{transform: translateX(0px) translateY(0px);}
+        16%{transform: translateX(15px) translateY(-25px);}
+        32%{transform: translateX(25px) translateY(0px);}
+        48%{transform: translateX(35px) translateY(-25px);}
+        64%{transform: translateX(45px) translateY(0px);}
+        80%{transform: translateX(55px) translateY(-25px);}
+        100%{transform: translateX(65px) translateY(0px);}
+    }
+
+    @keyframes whitedwarf {
+        50% {box-shadow: 2px 2px 5px white;border-color: white;background-color: white; opacity: 100%;}
+    
+        0%{transform: translateX(0px) translateY(0px);}
+        16%{transform: translateX(15px) translateY(-25px);}
+        32%{transform: translateX(25px) translateY(0px);}
+        48%{transform: translateX(35px) translateY(-25px);}
+        64%{transform: translateX(45px) translateY(0px);}
+        80%{transform: translateX(55px) translateY(-25px);}
+        100%{transform: translateX(65px) translateY(0px);}
+    }
+
+    @keyframes neutronstar {
+        50% {box-shadow: 2px 2px 5px rgb(0, 132, 255);border-color: rgb(0, 132, 255);background-color: rgb(0, 132, 255); opacity: 100%;}
+    
+        0%{transform: translateX(0px) translateY(0px);}
+        16%{transform: translateX(15px) translateY(-25px);}
+        32%{transform: translateX(25px) translateY(0px);}
+        48%{transform: translateX(35px) translateY(-25px);}
+        64%{transform: translateX(45px) translateY(0px);}
+        80%{transform: translateX(55px) translateY(-25px);}
+        100%{transform: translateX(65px) translateY(0px);}
+    }
+
+    @keyframes reddwarf {
+        50% {box-shadow: 2px 2px 5px orange;border-color: orange;background-color: orange; opacity: 100%;}
+    
+        0%{transform: translateX(0px) translateY(0px);}
+        16%{transform: translateX(15px) translateY(-25px);}
+        32%{transform: translateX(25px) translateY(0px);}
+        48%{transform: translateX(35px) translateY(-25px);}
+        64%{transform: translateX(45px) translateY(0px);}
+        80%{transform: translateX(55px) translateY(-25px);}
+        100%{transform: translateX(65px) translateY(0px);}
+    }
+
+    @keyframes browndwarf {
+        50% {box-shadow: 2px 2px 5px rgb(168, 101, 168);border-color: rgb(168, 101, 168);background-color: rgb(168, 101, 168); opacity: 100%;}
+    
+        0%{transform: translateX(0px) translateY(0px);}
+        16%{transform: translateX(15px) translateY(-25px);}
+        32%{transform: translateX(25px) translateY(0px);}
+        48%{transform: translateX(35px) translateY(-25px);}
+        64%{transform: translateX(45px) translateY(0px);}
+        80%{transform: translateX(55px) translateY(-25px);}
+        100%{transform: translateX(65px) translateY(0px);}
+    }
 }
 
 
