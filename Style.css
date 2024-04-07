@@ -309,7 +309,7 @@ aside #success {
 .blog .blogcontent {
     font-family: playfair , sans-serif;
     font-size: 1.4em;
-    height: 120px;
+    height: 165px;
     overflow: hidden;
     margin-bottom: 20px;
 }
@@ -686,6 +686,21 @@ aside #success {
         64%{transform: translateX(45px) translateY(0px);}
         80%{transform: translateX(55px) translateY(-25px);}
         100%{transform: translateX(65px) translateY(0px);}
+    }
+
+    .content .blog {
+        width: auto;
+        height: 600px;
+    }
+    
+    .blog .blogcontent {
+        height: 260px;
+        overflow: hidden;
+    }
+    
+    .blogcontent:focus-within {
+        overflow: visible;
+        height: auto;
     }
 }
 
